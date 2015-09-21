@@ -5,5 +5,19 @@
 # but you can also edit it by hand.
 
 meteor-platform
-autopublish
-insecure
+# autopublish
+# insecure
+
+# --CUSTOM PACKAGES--
+coffeescript
+stylus
+mquandalle:jade
+twbs:bootstrap
+accounts-ui
+accounts-password
+sanjo:jasmine
+velocity:html-reporter
+johnantoni:meteor-stickynav
+meteorhacks:fast-render
+iron:router
+tinytest
