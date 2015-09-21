@@ -1,0 +1,34 @@
+head
+	title Portfolio
+	meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui")
+	meta(name="apple-mobile-web-app-capable" content="yes")
+	meta(name="mobile-web-app-capable" content="yes")
+
+template(name='layout')
+	.container
+		header
+			+nav
+
+template(name='nav')
+	nav.navbar.navbar-default(type='navigation')
+		container-fluid
+			.navbar-header
+				button(type='button' class='navbar-toggle' data-toggle="collapse" data-target="#bs-example-navbar-collapse-1")
+					span.sr-only Toggle navigation 
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				+navBrand
+				
+			.collapse.navbar-collapse#bs-example-navbar-collapse-1
+				ul.nav.navbar-nav
+					+navItems
+					
+template(name='navBrand')
+	a.navbar-brand(href="{{pathFor 'home'}}") Sullivan Valaer
+
+template(name='navItems')
+	li(class="{{ activeIfTemplateIs 'resume' }}")
+		a(href="{{ pathFor 'resume'}}") Resume
+	li(class="{{ activeIfTemplateIs 'git' }}")
+		a(href="{{ pathFor 'git'}}") Github

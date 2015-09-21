@@ -16,8 +16,8 @@ twbs:bootstrap
 accounts-ui
 accounts-password
 sanjo:jasmine
-velocity:html-reporter
+# velocity:html-reporter
 johnantoni:meteor-stickynav
 meteorhacks:fast-render
 iron:router
-tinytest
+# tinytest
