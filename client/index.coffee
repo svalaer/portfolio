@@ -1,5 +1,8 @@
 if Meteor.isClient
-	Template.navItems.helpers
-		activeIfTemplateIs:(template)->
-			currentRoute = Router.current()
-			if currentRoute and template == currentRoute.lookupTemplate() then 'active' else ''
+	Template.nav.helpers
+	  "active": (parent) ->
+	    path_parts = Router.current().route.url.split "/"
+	    if _.contains path_parts, parent
+	      return "active"
+	Template.nav.rendered = ->
+		$(".button-collapse").sideNav();
