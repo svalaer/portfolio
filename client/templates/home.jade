@@ -1,48 +1,65 @@
 template(name='home')
-  #index-banner.section.no-pad-bot
-  .container
-    br
-    br
-    h1.header.center.orange-text Sullivan Valaer
-    .row.center
-      h5.header.col.s12.dark Front end Web Developer 
-      h5.header.col.s12.light Influnced by material design and clean UI's
-    .row.center
-      a#download-button.btn-large.waves-effect.waves-light.orange(href="{{pathFor 'contactMe'}}") Contact Me!
-    br
-
-  .container
-    .section
-      // Icon Section
-      .row.card.blue-grey.lighten-4
-        .col.s12.m3
-          .icon-block
-            h2.center.light-blue-text
-              i.material-icons info_outline
-            h5.center Our Platform
-            p.light.center
-              | We provide a unique end-to-end platform that takes advantage of our capture and production technology along with industry leading content management and distribution platform.
-        .col.s12.m3
-          .icon-block
-            h2.center.light-blue-text
-              i.material-icons visibility
-            h5.center Playback
-            p.light.center
-              | We want the world to see your work, so we’ve spent a ton of time developing software that can smoothly show your 360˚ video experience. No matter what devices it is displayed on. 
-        .col.s12.m3
-          .icon-block
-            h2.center.light-blue-text
-              i.material-icons dns
-            h5.center Distribution
-            p.light.center
-              | Video browsing, complex asset management and industrial applications can all be built and intigrated into the Immersive Media server platform. 
-
-        .col.s12.m3
-          .icon-block
-            h2.center.light-blue-text
-              i.material-icons settings_input_composite
-            h5.center SDK's
-            p.light.cent
-              | We have provided detailed documentation as well as specific code examples to help new users of our SDK's get started.
-    br
-    br
+  .section
+    .container
+      .row.center
+        .col.s12
+          h1.header.center.light-blue-text Sullivan Valaer
+      .row.center
+        .col.s12
+          img.personal-photo.center(src='https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAb3AAAAJGIwOTE0NTU4LTExMTMtNGM1My1iZTAwLTMzODM1YjVhMWUyZg.jpg' width='250')
+      .row.center
+        h4.header.col.s12.center.light-blue-text.darken-1 Portland Based Web Developer
+      .row.center
+        .col.s12.l4
+          a.waves-effect.waves-light.btn.light-blue(href="{{pathFor 'work'}}") Work
+        .col.s12.l4
+          a.waves-effect.waves-light.btn.light-blue(href="{{pathFor 'who'}}") Who
+        .col.s12.l4
+          a.waves-effect.waves-light.btn.light-blue(href="{{pathFor 'how'}}") How
+  //- #index-banner.section.no-pad-bot
+  //- .container
+  //-   br
+  //-   br
+  //-   h1.header.center.light-blue-text Sullivan Valaer
+  //-   .row.center
+  //-     h5.header.col.s12.dark Front end Web Developer 
+  //-     h5.header.col.s12.light Influnced by material design and clean UI's
+  //-   .row.center
+  //-     a#download-button.btn-large.waves-effect.waves-light.orange(href="{{pathFor 'contactMe'}}") Contact Me!
+  //-   br
+  //- 
+  //- .container
+  //-   .section
+  //-     // Icon Section
+  //-     .row.card.blue-grey.lighten-4
+  //-       .col.s12.m3
+  //-         .icon-block
+  //-           h2.center.light-blue-text
+  //-             i.material-icons info_outline
+  //-           h5.center Our Platform
+  //-           p.light.center
+  //-             | We provide a unique end-to-end platform that takes advantage of our capture and production technology along with industry leading content management and distribution platform.
+  //-       .col.s12.m3
+  //-         .icon-block
+  //-           h2.center.light-blue-text
+  //-             i.material-icons visibility
+  //-           h5.center Playback
+  //-           p.light.center
+  //-             | We want the world to see your work, so we’ve spent a ton of time developing software that can smoothly show your 360˚ video experience. No matter what devices it is displayed on. 
+  //-       .col.s12.m3
+  //-         .icon-block
+  //-           h2.center.light-blue-text
+  //-             i.material-icons dns
+  //-           h5.center Distribution
+  //-           p.light.center
+  //-             | Video browsing, complex asset management and industrial applications can all be built and intigrated into the Immersive Media server platform. 
+  //- 
+  //-       .col.s12.m3
+  //-         .icon-block
+  //-           h2.center.light-blue-text
+  //-             i.material-icons settings_input_composite
+  //-           h5.center SDK's
+  //-           p.light.cent
+  //-             | We have provided detailed documentation as well as specific code examples to help new users of our SDK's get started.
+  //-   br
+  //-   br
