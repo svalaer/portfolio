@@ -14,8 +14,6 @@ template(name='header')
           a(href="{{pathFor 'how'}}") How
 
       ul.side-nav#mobile-demo
-        li
-          a.brand-logo(href="/") Home
         li(class="{{isActiveRoute 'work'}}")
           a(href="{{pathFor 'work'}}") Work
         li(class="{{isActiveRoute 'who'}}")
